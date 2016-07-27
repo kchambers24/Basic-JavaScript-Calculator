@@ -53,19 +53,20 @@ alert("Title: " + title);
 
 
 
- var firstNumber = document.getElementById("input1").value;
- var secondNumber = document.getElementById("input1").value;
+ var firstNumber = document.getElementById("input1").valueAsNumber;
+ var secondNumber = document.getElementById("input2").valueAsNumber;
 
-var result = firstNumber + secondNumber;
-
-
-
+ var buttonElement = document.querySelector(“button”);
+ buttonElement.addEventListener("click", function(event){
+   var result = firstNumber + secondNumber;
+   console.log(result);
+ }
 
 
  //var sumNumber = (firstNumber + secondNumber)
 
 
-var calculate = document.querySelector("input");
+//var calculate = document.querySelector("input");
 
 
 
